@@ -1,0 +1,11 @@
+1. Line 12 prints `3` because `var` makes `i` accessible outside of the `for` loop. The `for` loop ends when `i = 3`, so that value is printed by line 12.
+2. Line 13 prints `150` because `var` makes `discountedPrice` accessible outside of the `for` loop. In the last iteration of the `for` loop, `discountedPrice = 150`, so that value is printed by line 13.
+3. Line 13 prints `150` because the last iteration of the `for` loop assigns `150` to `finalPrice`.
+4. This function returns a list of the discounted prices `[50, 100, 150]` because line 9 pushes each `finalPrice` from each `for` loop iteration to the end of the array.
+5. The code returns a ReferenceError because `let` makes `i` only accessible within the `for` loop. Line 12 attempts to access `i` outside of the `for` loop.
+6. The code returns a ReferenceError because `let` makes `discountedPrice` only accessible within the `for` loop. Line 13 attempts to access `discountedPrice` outside of the `for` loop.
+7. Line 14 prints `150` because the last iteration of the `for` loop assigns `150` to `finalPrice`. There are no issues because `let` allows `finalPrice` to be accessible within the same block.
+8. This function returns a list of the discounted prices `[50, 100, 150]` because line 9 pushes each `finalPrice` from each `for` loop iteration to the end of the array. `let` allows `discounted` to be accessible in the same block and within the `for` loop, so no issues arise.
+9. The code returns a ReferenceError because `let` makes `i` only accessible within the `for` loop. Line 11 attempts to access `i` outside of the `for` loop.
+10. Line 12 prints `3` because `length` is assigned the length of the given `prices` array, which is `3`. There are no issues with accessing this `const` variable within the same block.
+11. This function returns a list of the discounted prices `[50, 100, 150]` because line 8 pushes each `discountedPrice` from each `for` loop iteration to the end of the array. `const` prevents the array value from being reassigned, but `push()` is allowed.
