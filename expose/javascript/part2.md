@@ -29,3 +29,13 @@
     e. `false` because `true` is converted to the integer `1`, which is not equal to `2`.
     f. `true` because `Boolean(2)` is converted to `true` since it is not `0`.
 15. `==` checks equality after type conversion, while `===` checks equality without type conversion.
+16. (See [part2-question16.js](part2-question16.js))
+17. The result will be the array `[2, 4, 6]`. This is the result because the `for` loop iterates over the given array `[1, 2, 3]`, multiplies each element by 2 (using `callback()` which refers to the function `doSomething()`), and pushes each element to `newArr`.
+18. (See [part2-question18.js](part2-question18.js))
+19. The output is:
+```
+1
+4
+3
+2
+```
